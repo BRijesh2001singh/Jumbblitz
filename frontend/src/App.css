@@ -1,0 +1,389 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.game-box {
+  background-image: url('./assets/gbg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.score {
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.218);
+  box-shadow: 0px 3px 10px rgb(0, 0, 0);
+  color: rgb(240, 248, 255);
+  width: 15vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  /* Four shadows to create the outline */
+}
+
+.score>h2 {
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.score>span {
+  margin-top: 2rem;
+}
+
+.score-table {
+  font-size: 30px;
+  margin-top: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+
+.game-zone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+  height: 80vh;
+  margin-right: 5rem;
+  margin-left: 8rem;
+  padding: 1rem;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.156);
+  box-shadow: 0px 3px 10px rgb(0, 0, 0);
+}
+
+.game-zone>span {
+  margin-bottom: 8rem;
+}
+
+.time-content {
+  font-size: 35px;
+  color: aliceblue;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  /* Four shadows to create the outline */
+}
+
+.jword {
+  font-size: 150px;
+  font-family: cursive;
+  text-shadow:
+    -1px -1px 0 #ffffff54,
+    1px -1px 0 #ffffff7a,
+    -1px 1px 0 #ffffff7a,
+    1px 1px 0 #ffffff7a;
+  /* Four shadows to create the outline */
+}
+
+.winner-box {
+  color: white;
+  font-size: larger;
+  background-color: #000;
+  padding: .2rem;
+  border-radius: 10px;
+}
+
+.msg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 1rem;
+  height: 80vh;
+  width: 20vw;
+  box-shadow: 0px 3px 10px rgb(0, 0, 0);
+  overflow-y: hidden;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.139);
+
+}
+
+.msg-container>span {
+  border-radius: 10px;
+  padding: .2rem;
+  background-color: rgba(227, 224, 224, 0.765);
+  margin-bottom: 1rem;
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+
+}
+
+.msg-container>input {
+  border: none;
+  border-radius: 15px;
+  padding: .5rem;
+}
+
+/* menu styles */
+.menu-container {
+  background-image: url('./assets/mbg.jpg');
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game_title {
+  margin-top: 3rem;
+}
+
+.game_title>span {
+  font-size: 80px;
+  text-shadow:
+    -1px -4px 0 #000000,
+    1px -4px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+.menu-details {
+  border: 1px solid black;
+  background-color: rgba(66, 60, 228, 0.37);
+  height: 40vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.menu-details>span {
+  font-family: cursive;
+  font-size: 50px;
+  color: white;
+  text-shadow:
+    -1px -4px 0 #000000,
+    1px -4px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+  /* Four shadows to create the outline */
+}
+
+.menu-details>input {
+  border: none;
+  padding: 1rem;
+  border-radius: 20px;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: large;
+  color: black;
+  background-color: #ffffff;
+}
+
+.menu-details>button {
+  border: none;
+  padding: .5rem;
+  font-family: cursive;
+  border-radius: 10px;
+  background-color: greenyellow;
+  font-size: larger;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.menu-details>button:hover {
+  transform: scale(1.2);
+}
+
+.footer {
+  border: 1px solid black;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40%;
+  padding: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  background-color: rgba(11, 32, 95, 0.706);
+}
+
+.footer>.name {
+  display: flex;
+  width: 10%;
+
+}
+
+.footer>.name>span {
+  font-size: 50px;
+}
+
+.footer>.about {
+  display: flex;
+  flex-direction: column;
+  margin-left: 3rem;
+  width: 30%;
+}
+
+.footer>.about>span {
+  color: white;
+  font-family: cursive;
+  font-size: 30px;
+}
+
+.footer>.about>p {
+  color: whitesmoke;
+  font-family: cursive;
+
+}
+
+.footer>.contacts {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.footer>.contacts>span {
+  font-family: cursive;
+  font-size: 20px;
+  color: white;
+}
+
+.contact__details>a {
+  margin: 1rem;
+}
+
+.modal {
+  position: absolute;
+  text-align: center;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12%;
+  height: 50vh;
+  background-color: rgba(219, 219, 219, 0.388);
+  box-shadow: 0 -10px 100px rgba(255, 255, 255, 0.664);
+}
+
+.modal-content>span {
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+.modal-content>img {
+  width: 10%;
+}
+
+/* .room-details {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: c;
+  width: 50vw;
+  height: 50vh;
+  background-color: #ffffffb3;
+} */
+.winBoard {
+  display: flex;
+  position: absolute;
+  background-color: #ffffff42;
+  width: 50vw;
+  height: 60vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('https://i.pinimg.com/originals/9c/9c/95/9c9c9594083c7803650bca0f43f2b326.gif');
+  border-radius: 20px;
+}
+
+.winBoard-dis {
+  font-family: cursive;
+  font-size: 80px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.winBoard>button {
+  border: none;
+  color: black;
+  border-radius: 10px;
+  font-size: large;
+  padding: .2rem;
+  font-family: cursive;
+  margin: .5rem;
+}
+
+.winBoard>button:hover {
+  transform: scale(1.2);
+}
+
+/* less than 900px */
+@media (max-width:900px) {
+  .game-box {
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .game-zone {
+    height: 15vh;
+    width: 30vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    margin-bottom: 4rem;
+  }
+
+  .score {
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 8rem;
+  }
+
+  .score>h2 {
+    font-size: 20px;
+    margin-right: 2rem;
+  }
+
+  .score>span {
+    font-size: small;
+  }
+
+  .score-table {
+    font-size: medium;
+  }
+
+  .jword {
+    font-size: 50px;
+  }
+
+  .msg-container {
+    height: 30vh;
+    width: 70%;
+  }
+}
