@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import guessed from '../assets/sounds/new-notification-7-210334.mp3'
 import '../App.css';
 import { socket } from '../socket';
+import timerSound from '../assets/sounds/time.mp3'
 function GameBoard() {
     const [userCount, setUserCount] = useState(0);
     const [newWord, setNewWord] = useState("");
@@ -50,7 +51,7 @@ function GameBoard() {
         socket.on('correct', (data) => {
             if (data.status) {
                 new Audio(guessed).play();
-                setChat((prevChat) => [...prevChat, { msg: `${data.name} guessed it right!`, name: 'server' }]);
+                setChat((prevChat) => [...prevChat, { msg: `${data.name} guessed it right!`, name: 'Server' }]);
             }
         })
         //get scores
@@ -73,6 +74,9 @@ function GameBoard() {
         });
         //timer
         socket.on('timer', (data) => {
+            if (data === 10) {
+                new Audio(timerSound).play();
+            }
             setTimer(data);
         })
         //winner
@@ -143,7 +147,7 @@ function GameBoard() {
                             }
                             return true; // Keep all other messages
                         }).map((item, ind) => (
-                            item.name === 'server' ? (
+                            (item.name === 'server' || item.name === 'Server') ? (
                                 <span style={{ color: "#116c19" }} key={ind}>{item.name}: {item.msg}</span>
                             ) : item.name === 'server-l' ? (
                                 <span style={{ color: "red" }} key={ind}>server: {item.msg}</span>
