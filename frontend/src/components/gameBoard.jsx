@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import guessed from '../assets/sounds/new-notification-7-210334.mp3'
 import '../App.css';
 import { socket } from '../socket';
-import timerSound from '../assets/sounds/time.mp3'
+import timerSound from '../assets/sounds/level-up-3-199576.mp3'
 function GameBoard() {
     const [userCount, setUserCount] = useState(0);
     const [newWord, setNewWord] = useState("");
