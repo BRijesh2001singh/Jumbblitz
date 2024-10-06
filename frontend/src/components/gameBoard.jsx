@@ -110,7 +110,7 @@ function GameBoard() {
                     <img src='https://media4.giphy.com/media/9xQlVSF2W0gcDkjpwW/giphy.gif?cid=6c09b952fefbhagyb5w5qm98o8vwp9rn22vwhgtx5zyqxbhd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s' />
                     <span>Waiting for opponent to join....</span>
                 </div>
-
+                <span><strong style={{ color: "white", fontSize: "2rem" }}>Tip:For demo open game on two different tabs.</strong></span>
             </div>) : (
                 <>
                     <div className="score">
