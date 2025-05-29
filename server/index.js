@@ -45,8 +45,6 @@ const words = [
 ];
 
 let usercount = 0;
-let roomno = 1;
-let full = 0;
 let users = {};
 let scorechart = {};
 let prevWord = "";
