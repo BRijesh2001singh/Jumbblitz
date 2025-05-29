@@ -9,7 +9,7 @@ const PORT = process.env.PORT;
 app.use(cors());
 const io = new Server(httpserver, {
     cors: {
-        origin: ["http://localhost:5000", "http://192.168.1.4:5000"],
+        origin: ["http://localhost:5000", "http://192.168.1.4:5000","https://jumbblitz.netlify.app"],
         methods: ["GET", "POST"],
         credentials: true
     }
